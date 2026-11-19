@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selbstlernphase – Was könnte ich jetzt tun?</title>
+<style>
+  :root{
+    --bg:#f7f5f0; --card:#ffffff; --ink:#1f2328; --muted:#5b616b;
+    --line:#e3dfd6; --accent:#1f6f5c; --accent-soft:#e3f1ec; --warm:#b4532a; --warm-soft:#fbeee6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  a{color:var(--accent)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{padding:56px 0 28px}
+  .kicker{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);font-weight:700;margin:0 0 8px}
+  h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;margin:0 0 18px;letter-spacing:-.02em}
+  .lead{font-size:1.12rem;max-width:62ch;margin:0;color:#333}
+
+  .meet{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;
+    background:var(--warm-soft);border:1px solid #f0d6c6;border-radius:18px;padding:24px 26px;margin:28px 0 8px}
+  .clock{background:var(--warm);color:#fff;border-radius:14px;padding:12px 16px;text-align:center;min-width:104px}
+  .clock b{display:block;font-size:1.8rem;line-height:1}
+  .clock span{font-size:.8rem;opacity:.9}
+  .meet h2{margin:0 0 6px;font-size:1.2rem}
+  .meet ol{margin:6px 0 0;padding-left:1.3em}
+  .meet li{margin:4px 0}
+
+  nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:34px 0 6px}
+  nav.toc a{text-decoration:none;font-size:.9rem;padding:6px 12px;border:1px solid var(--line);
+    border-radius:999px;background:var(--card);color:var(--ink)}
+  nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+
+  section{padding:30px 0 6px}
+  section > h2{font-size:1.45rem;margin:0 0 4px;letter-spacing:-.01em}
+  section > p.sub{margin:0 0 18px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;
+    display:flex;flex-direction:column;transition:border-color .15s, transform .15s}
+  .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:2px 8px;margin-bottom:10px}
+  .card h3{font-size:1.08rem;line-height:1.3;margin:0 0 8px}
+  .card p{margin:0 0 14px;font-size:.96rem;color:#353a40;flex:1}
+  .links{display:flex;flex-wrap:wrap;gap:8px}
+  .btn{display:inline-block;text-decoration:none;font-size:.9rem;font-weight:600;padding:7px 13px;border-radius:9px;
+    background:var(--accent);color:#fff}
+  .btn:hover{background:#17584a}
+  .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+  .btn.ghost:hover{background:var(--accent-soft)}
+  .note{font-size:.86rem;color:var(--muted);background:#f3f1ec;border-radius:8px;padding:8px 10px;margin:-4px 0 14px}
+
+  footer{margin:48px 0 0;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  @media (max-width:560px){
+    .meet{grid-template-columns:1fr}
+    .clock{justify-self:start}
+    header{padding-top:36px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">Selbstlernphase · Freiarbeitszeit</p>
+  <h1>Was könnte ich jetzt tun?</h1>
+  <p class="lead">Grundsätzlich geht es in der Freiarbeitszeit um die <strong>Weiterarbeit an deinem Projekt</strong>. Das kannst du so gestalten, wie es für dich passt. Wenn du die Zeit nutzen willst, um dir neue Methoden, Impulse und Tools zu erschließen, findest du unten eine Zusammenstellung mit Links.</p>
+
+  <div class="meet" role="note">
+    <div class="clock"><b>16:00</b><span>Uhr · BBB-Raum</span></div>
+    <div>
+      <h2>Wir treffen uns um 16 Uhr wieder im BBB-Raum. Bitte bring mit:</h2>
+      <ol>
+        <li><strong>Eine Frage</strong>, die du im Plenum klären willst.</li>
+        <li><strong>Etwas, das du teilen willst:</strong> Was hast du neu gelernt, ausprobiert, gestaltet?</li>
+      </ol>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Themen">
+    <a href="#ki-lernen">KI in Lernprozessen</a>
+    <a href="#muendigkeit">Digitale Mündigkeit &amp; eigene Infrastruktur</a>
+    <a href="#tools">Werkzeuge</a>
+    <a href="#offen">Offene Bildung &amp; Haltung</a>
+    <a href="#reflexion">Grundlagen &amp; Reflexion</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="ki-lernen">
+  <h2>KI in Lernprozessen</h2>
+  <p class="sub">Impulse, wie KI Lernen anregen kann – gemeinsam, ungewohnt und reflektiert.</p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Blogbeitrag</span>
+      <h3>Soziale KI-Nutzung</h3>
+      <p>Plädoyer, KI nicht vor allem als individuellen Tutor zu nutzen, sondern als Impulsgeberin in Gruppenprozessen. Mit zehn Ansatzpunkten (z.&nbsp;B. Ideenfindung, blinde Flecken aufspüren, Visualisieren, Clustern, Moderieren) und einem Ablauf in fünf Schritten.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/blog/soziale-ki-nutzung/" target="_blank" rel="noopener">Zum Beitrag</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Lernseite · CC0</span>
+      <h3>KI kontra-intuitiv</h3>
+      <p>Praktische Impulse, KI-Sprachmodelle auf ungewohnte Weise zu nutzen – in drei Zugängen: Kreativität entwickeln, mit Lernkontext-Dateien arbeiten und Modellierung. Am besten gemeinsam ausprobieren und reflektieren, was das für den eigenen pädagogischen Kontext bedeutet.</p>
+      <p class="note">Der Quellcode liegt offen auf GitHub (CC0) – du kannst die Seite also kopieren und für eigene Zwecke anpassen.</p>
+      <div class="links">
+        <a class="btn" href="https://ebildungslabor.github.io/ki-kontra-intuitiv/" target="_blank" rel="noopener">Zur Lernseite</a>
+        <a class="btn ghost" href="https://github.com/eBildungslabor/ki-kontra-intuitiv" target="_blank" rel="noopener">Repository auf GitHub</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Blogbeitrag + offener Kurs</span>
+      <h3>AIS.chat in der Praxis – über die Schulter geschaut</h3>
+      <p>Vorstellung eines Selbstlernkurses zu AIS.chat, der KI-Plattform für Lehrkräfte in Niedersachsen und weiteren Bundesländern. Im Mittelpunkt stehen fünf fiktive Lehrkräfte-Porträts; alternativ startest du mit deiner eigenen Herausforderung und Reflexionsfragen. Nicht-linear, für allein oder in der Gruppe.</p>
+      <p class="note">💡 Den verlinkten Kurs kannst du auch direkt nutzen – er ist offen zugänglich, ohne Anmeldung oder Registrierung.</p>
+      <div class="links">
+        <a class="btn" href="https://ebildungslabor.de/blog/ais-chat-in-der-praxis-ueber-die-schulter-geschaut/" target="_blank" rel="noopener">Zum Beitrag</a>
+        <a class="btn ghost" href="https://openelec.moodle-nds.de/course/view.php?id=587" target="_blank" rel="noopener">Direkt zum Kurs</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="muendigkeit">
+  <h2>Digitale Mündigkeit &amp; eigene Infrastruktur</h2>
+  <p class="sub">Unabhängiger werden von einzelnen Plattformen – mit überschaubarem Aufwand.</p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Anleitung</span>
+      <h3>So gestaltest du dir einen eigenen KI-Server</h3>
+      <p>Schritt für Schritt zum eigenen Online-KI-Server, um offene und proprietäre Modelle plattformunabhängig zu nutzen: mit Hetzner, Docker, Ollama, Open WebUI als Oberfläche und OpenRouter. Mehr Vielfalt und Kontrolle bei überschaubaren Kosten – im Team noch günstiger.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/blog/so-gestaltest-du-dir-einen-eigenen-ki-server/" target="_blank" rel="noopener">Zum Beitrag</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Blogbeitrag</span>
+      <h3>OpenCode – KI-Agenten mit mehr digitaler Mündigkeit</h3>
+      <p>Vorstellung von OpenCode, einem Open-Source-Tool, mit dem KI-Agenten auf dem eigenen Rechner laufen. Anders als bei anbietergebundenen Lösungen kannst du zwischen Anbietern wechseln und auch lokale Modelle einbinden.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/blog/opencode-ki-agenten-mit-mehr-digitaler-muendigkeit/" target="_blank" rel="noopener">Zum Beitrag</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Anleitung</span>
+      <h3>Eine eigene Website ohne Wartungsaufwand</h3>
+      <p>Warum sich eine eigene Website statt Social Media lohnt – und wie das ohne Pflegeaufwand klappt: mit dem statischen Website-Tool Publii statt WordPress. Schritt für Schritt von Domain und Webspace über eine Vorlage bis zur Veröffentlichung per SFTP.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/blog/eine-eigene-website-ohne-wartungsaufwand/" target="_blank" rel="noopener">Zum Beitrag</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Werkzeug-Klassiker</span>
+      <h3>Super-simple Wikis für Zusammenarbeit</h3>
+      <p>DokuWiki als schlanke Open-Source-Lösung für kleine Projekte – ohne Datenbank, auf günstigem Webspace. Ideal für Aktuelles, Protokolle oder Linksammlungen; kombinierbar mit Etherpad oder den geteilten Notizen in BigBlueButton.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/blog/super-simple-wikis-fuer-zusammenarbeit-ein-klassiker-werkzeug-das-immer-noch-hilfreich-ist/" target="_blank" rel="noopener">Zum Beitrag</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Mini-Fortbildung</span>
+      <h3>Einstieg ins Fediverse</h3>
+      <p>Selbstorganisierte Mini-Fortbildung für den Einstieg ins Fediverse, etwa über Mastodon als offenes, demokratisch gestaltetes soziales Netzwerk. Ablauf: ein knapp 20-minütiges Intro-Video, danach rund eine Stunde praktisches Erkunden mit Smartphone, Laptop oder Tablet. Keine Vorkenntnisse nötig, ideal auch im Team.</p>
+      <div class="links"><a class="btn" href="https://fediverse.ebildungslabor.de/" target="_blank" rel="noopener">Zur Fortbildung</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="tools">
+  <h2>Werkzeuge</h2>
+  <p class="sub">Direkt ausprobieren.</p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Tool-Sammlung</span>
+      <h3>kits.app</h3>
+      <p>App-Launcher des Niedersächsischen Landesinstituts (NLQ), der Werkzeuge für den Bildungsbereich bündelt: Texte übersetzen und vertonen, Mindmaps, gemeinsames Schreiben, Zeichnen, Wortwolken, Trickfilme und mehr.</p>
+      <div class="links"><a class="btn" href="https://kits.app" target="_blank" rel="noopener">kits.app öffnen</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="offen">
+  <h2>Offene Bildung &amp; Haltung</h2>
+  <p class="sub">Offene Materialien und innere Fähigkeiten für Transformation.</p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Selbstlernkurs</span>
+      <h3>Einstieg in OER</h3>
+      <p>Einführung in Open Educational Resources in fünf Online-Lerneinheiten: von Begriff und Funktionsweise über Suchen und Nutzen bis zum Erstellen eigener offener Materialien, mit Abschlussmodul.</p>
+      <div class="links"><a class="btn" href="https://einstiegoer.de/" target="_blank" rel="noopener">Zum Kurs</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Blogbeitrag</span>
+      <h3>Inner Development Goals (IDGs)</h3>
+      <p>Die IDGs ergänzen die UN-Nachhaltigkeitsziele um die Frage, welche inneren Fähigkeiten und Haltungen es für deren Umsetzung braucht – in fünf Dimensionen: Sein, Denken, Beziehung, Zusammenarbeit, Handeln. Mit pädagogischer Einordnung.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/blog/inner-development-goals-idgs-inneres-wachstum-fuer-nachhaltige-transformation/" target="_blank" rel="noopener">Zum Beitrag</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="reflexion">
+  <h2>Grundlagen &amp; Reflexion</h2>
+  <p class="sub">Begriffe anhören und das eigene Lernen durchdenken.</p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Podcast · CC0</span>
+      <h3>Grundlagenbegriffe anhören: 3 Minuten Pädagogik</h3>
+      <p>Kurze Audio-Folgen, die pädagogische Grundbegriffe in rund drei Minuten praxisnah erklären – z.&nbsp;B. „Was sind KI-Agenten?“, „Was ist Agency?“, „Was ist ein Prompt?“, „Was ist Ambiguitätstoleranz?“ oder „Was ist selbstreguliertes Lernen?“.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/category/podcast/" target="_blank" rel="noopener">Zu den Folgen</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">Methode</span>
+      <h3>Lernreflexion mit dem Modell von Graham Gibbs</h3>
+      <p>Ein Reflexionszyklus in sechs Phasen: Beschreiben, Fühlen, Bewerten, Analysieren, Schlussfolgern, Handeln. Gut geeignet für selbstgesteuertes Lernen – und auch als Vorbereitung auf das Teilen um 16 Uhr. Für Gruppen um eine Wir-Perspektive erweiterbar.</p>
+      <div class="links"><a class="btn" href="https://ebildungslabor.de/blog/lernreflexion-mit-dem-modell-von-graham-gibbs/" target="_blank" rel="noopener">Zum Beitrag</a></div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Viel Freude beim Weiterarbeiten, Entdecken und Ausprobieren! · Bis 16 Uhr im BBB-Raum.
+</footer>
+
+</div>
+</body>
+</html>
